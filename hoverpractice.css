@@ -1,20 +1,23 @@
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	width: 800px;
-	height: 960px;
-	margin: auto;
+	height: auto;
 	margin-top: 30px;
 	background: #343436;
-	color: #fff;
+	color: #343436;
+}
+
+.container {
+	width: 769px;
+	margin: auto;
 }
 
 [id*="box"] {
 	text-align: center;	
 	background: #FF3232;
-
 }
 
 .row::after {
@@ -42,82 +45,129 @@ body {
 .col-12 {width: 100%;}
 
 #box1 {
-	height: 500px;
+	height: 458px;
 	width: 100%;
-	line-height: 500px;
+	line-height: 458px;
 	margin: 1px;
 	font-size: 2em;	
 }
 
 #box1:hover {
 	border-radius: 10px;
-	height: 480px;
+	height: 438px;
+	line-height: 438px;
 	width: 97%;
-	margin-top: 10px;
-	margin-left: 10px;
+	margin: 10px;
+	cursor: pointer;
 }
 
 #box2 {
-	height: 300px;
+	height: 280px;
 	width: 100%;
-	line-height: 300px;	
+	line-height: 280px;	
 	margin: 1px;
 	font-size: 1.5em;
 }
 
 #box2:hover {
-	border-radius: 10px;
-	height: 285px;
+	border-radius: 9px;
+	height: 270px;
+	line-height: 270px;
 	width: 97%;
-	margin: 8px;
+	margin: 6px;
+	cursor: pointer;
 }
 
 #box3 {
-	height: 197px;
-	width: 100%;
-	line-height: 197px;	
-	margin: 1px;
+	height: 176px;
+	width: 101%;
+	line-height: 176px;	
+	margin: 0px 1px 1px 0px;
 	font-size: 1.2em;
 
 }
 
 #box3:hover {
-	border-radius: 10px;
-	height: 185px;
+	border-radius: 7px;
+	height: 160px;
+	line-height: 160px;
 	width: 98%;
-	margin-top: 5px;
-	margin-left: 5px;
+	margin: 4px;
+	cursor: pointer;
 }
 
 #box4 {
-	height: 111px;
+	height: 107px;
 	width: 100%;
-	line-height: 111px;
-	margin: 1px;
+	line-height: 107px;
+	margin: 1px 1px 1px 0px;
 	font-size: 1em;
 }
 
 #box4:hover {
 	border-radius: 7px;
-	height: 100px;
+	height: 96px;
+	line-height: 96px;
 	width: 96%;
-	margin: 4px;
+	margin-top: 6px;
+	margin-left: 3px;
+	cursor: pointer;
 }
 
 #box5 {
-	height: 85px;
+	height: 68px;
 	width: 100%;
-	line-height: 85px;
-	margin: 1px;
+	line-height: 68px;
+	margin: 0px 1px 0px 0px;
 	font-size: .7em;	
 }
 
 #box5:hover {
-	border-radius: 7px;
-	height: 77px;
+	border-radius: 6px;
+	height: 60px;
+	line-height: 60px;
 	width: 96%;
-	margin: 4px;
+	margin-left: 3px;
+	margin-bottom: 6px;
+	margin-top: 3px;
+	cursor: pointer;
 }
+
+/*****************************************
+				RESPONSIVE
+*****************************************/		
+
+
+@media only screen and (max-width: 768px) {
+    		/*mobile phones*/
+
+    .container {
+    	width: auto;
+    }
+
+    [class*="col-"] {
+	    width: 100%;
+	    margin: 0px;
+	}
+
+	#box5, #box4, #box3 {
+		width: 100.5%;
+	}
+
+	#box1:hover {
+		margin: 8px 8px 10px 6px;
+	}
+
+	#box4:hover {
+		margin: 5px 0px 4px 8px;
+	}
+
+	#box5:hover {
+		margin-left: 9px;
+	}
+}
+
+
 
 
 
