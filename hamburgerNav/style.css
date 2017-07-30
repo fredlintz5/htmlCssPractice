@@ -1,0 +1,125 @@
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF3232;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+header { 
+	background: #333;
+	color: white;
+	height: 60px;
+}
+
+#brand {
+	float: left;
+	margin-left: 50px;
+
+}
+
+#brand h3 {
+	line-height: 18px;
+}
+
+#showWide {
+	float: right;
+	text-align: center;
+	margin-right: 20px;
+}
+
+#showWide ul li {
+	float: left;
+	list-style: none;
+	line-height: 60px; 
+	margin-right: 10px;
+
+}
+
+#showNarrow {
+	display: none;
+}
+
+#navNarrow {
+	display: block;
+}
+
+/*******************************************
+				RESPONSIVE
+*******************************************/
+
+
+@media only screen and (max-width: 576px) {
+	/*For mobile Phones: */
+
+	#brand {
+		margin-left: 20px;
+	}
+
+	#showWide {
+		display: none;
+	}
+
+	#showNarrow {
+		display: initial;
+		float: right;
+		margin-top: 20px;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+
+	#showNarrow div {
+		width: 35px;
+	    height: 4px;
+	    border-radius: 4px;
+	    background: #fff;
+	    margin-bottom: 4px;
+	}
+
+	#navNarrow {
+		display: none;
+		position: relative;
+		top: 12px;
+	}
+
+	#navNarrow ul {
+		position: relative;
+	    float: left;
+	    left: -50px;
+	    color: #fff;
+	    width: 130%;
+	    background: #5F5F5F;
+	    opacity: .8;
+	    list-style: none;
+	    line-height: 22px;
+	    padding-top: 10px;
+	    padding-bottom: 15px;
+	    padding-left: 70px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
